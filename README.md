@@ -14,4 +14,11 @@ Finally, you can 'snapshot' the image and restart it later. The current applicat
 
 There are two bundles, both are actually minified but the `.min` version has name mangling turned on which might make debugging a little more difficult.
 
+## Bun
+[Bun](https://bun.sh) is a drop-in replacement for Node.js. Bun can be used with CP-Node. Currently there are two things to be aware of:
+1. Either wait for the new release (you need newer than 1.0.30) or use a canary build (see [Upgrade](https://github.com/oven-sh/bun?tab=readme-ov-file#upgrade)), because of a Node.js incompatibility (which is fixed but not released yet).
+2. Use "127.0.0.1" instead of "localhost", because Bun has an issue with IPV4 and IPV6 networks and mapping localhost (see [Issue](https://github.com/oven-sh/bun/issues/1425)).
+
+Apart from that, Bun seems to run okay as well.
+
 Happy hacking!
