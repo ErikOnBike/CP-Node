@@ -12,7 +12,7 @@ The above command will run the CodeParadise application "http-server-example" wi
 
 Finally, you can 'snapshot' the image and restart it later. The current application (in this case server) state is kept. So any calculations present are stored in the image. To snapshot use the url `http://localhost:8181/snapshot`. Snapshotting means the Smalltalk image gets 'sealed', it will no longer be connected to the CodeParadise server. Updates to the code will not be propagated to the image. Once sealed it can be run without needing the CodeParadise server running, so you can distribute the application to your friends ;-). To start you can simply use `node cp-node.js client-environment.image` without supplying the server information. You can change the name of the image file to better match your application's name of course.
 
-There are two bundles, both are actually minified but the `.min` version has name mangling turned on which might make debugging a little more difficult.
+There are two bundles, both are actually minified but the `.min` version has name mangling turned on which might make debugging a little more difficult (should you have a need for this).
 
 ## Bun
 [Bun](https://bun.sh) is a drop-in replacement for Node.js. Bun can be used with CP-Node, but is not heavily tested.
